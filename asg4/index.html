@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons8-girl-32.png">
+    <script src="script.js" defer></script>
+    <script src="../script.js" defer></script>
+</head>
+<body id="backgroundImageBody">
+    <header id="menu">
+        <div onclick="changeMenuBar(this)" class="menuContainer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="nav" id="nav">
+        <nav>
+            <ul >
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact.html">A1</a></li>
+                <li><a href="../asg2/index.html">A2</a></li>
+                <li><a href="../asg3/index.html">A3</a></li>
+                <li><a href="index.html">A4</a></li>
+                <li><a href="../asg5/index.html">A5</a></li>
+                <li><a href="../asg6/index.html">A6</a></li>
+                <li><a href="../asg7/index.html">A7</a></li>
+                <li><a href="../asg5/products.html">Postcards</a></li>
+            </ul>
+        </nav>
+        <a href="../contact.html"> <button>Contact</button> </a>
+        </div>
+    </header>
+    <div id="main">
+        <div id="input">
+            <h2>Pick a date to see if it is a holday!</h2>
+            <form id="myForm">
+                <input type="date" name="myDate" id="myDate" min="2022-09-01" max="2023-08-31" required="">
+                <br>
+                <input type="submit" name="submit">
+            </form>
+        </div>
+        <div id="outputImgv" class="outputImg">
+        </div>
+        <div id="outputImgh" class="outputImg">
+        </div>
+        <div id="resultText">
+            <h3 id="output"></h3>
+            <p id="citation"></p>
+        </div>
+    </div>
+    <footer>
+        <p> &copy; 2022 Aigerim Zhusubalieva</p>
+    </footer>
+</body>
+</html>

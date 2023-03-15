@@ -1,0 +1,59 @@
+#changeButton, #prizeButton{
+    background-color: #a9def9;
+    border: none;
+    border-radius: 5px;
+    color: #015680;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-family: monospace;
+    display: inline-block;
+    font-size: 20px;
+    width: 200px;
+    box-shadow: 1px 2px 5px #6c8e9f;
+    margin: 50px auto;
+}
+
+#changeButton:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 1px 2px 5px black;
+    cursor: pointer;
+}
+
+#prizeButton:hover{
+    background-color: #799fb2;
+    color: #003955;
+    box-shadow: 1px 2px 5px black;
+    cursor: pointer;
+}
+
+#home{
+    background-color: none;
+}
+
+#congrats{
+    visibility: hidden;
+}
+
+p:hover{
+    cursor: pointer;
+    text-shadow: 1px 1px 5px red;
+}
+
+img{
+    width: 100px;
+    height: auto;
+}
+
+img:hover{
+    cursor: pointer; 
+}
+
+#imgContainer{
+    display: flex;
+    width: 80wv;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0px;
+}

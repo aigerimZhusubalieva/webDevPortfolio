@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A7</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons8-girl-32.png">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- <script src="script.js" defer></script> -->
+    <script src="../script.js" defer></script>
+</head>
+<body id="backgroundImageBody">
+    <header id="menu">
+        <div onclick="changeMenuBar(this)" class="menuContainer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="nav" id="nav">
+        <nav>
+            <ul >
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact.html">A1</a></li>
+                <li><a href="../asg2/index.html">A2</a></li>
+                <li><a href="../asg3/index.html">A3</a></li>
+                <li><a href="../asg4/index.html">A4</a></li>
+                <li><a href="../asg5/index.html">A5</a></li>
+                <li><a href="../asg6/index.html">A6</a></li>
+
+                <li><a href="index.html">A7</a></li>
+                <li><a href="products.html">Postcards</a></li>
+            </ul>
+        </nav>
+        <a href="../contact.html"> <button>Contact</button> </a>
+        </div>
+    </header>
+    <div id="main">
+        <div id="madlibsList"> 
+        </div>
+        <h1>MARINE TURTLES QUIZ! &#128034;</h1>
+        <div class="ocean">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <div id="formContainer">
+            <?php
+                $answerKey = array(
+                'q1' => 'No', 
+                'q2' => 'deepsea', 
+                'q3' => 'thousand'
+                );
+                $q1 = $_POST['q1'];
+                $q2 = $_POST['q2'];
+                $q3 = $_POST['q3'];
+                $correct = 0;
+            ?>
+            <form method="post" id="qform">
+                <?php
+                        if($q1 == $answerKey['q1']){
+                            echo "<p class='left'> 1. Do they have teeth? &#10004;</p>";
+                            $correct = $correct + 1;
+                        }else{
+                            echo "<p class='left'> 1. Do they have teeth? &#10060;</p>";
+                        }
+                ?>
+                <div class="brow">
+                    <input type="radio" name="q1" id="yesTeeth" value="Yes" disabled>
+                    <label for="yesTeeth">Yes</label>
+                    <input type="radio" name="q1" id="noTeeth" value="No" disabled>
+                    <label for="noTeeth" class="correct">No</label>
+                </div>
+                <?php
+                        if($q2 == $answerKey['q2']){
+                            echo "<p class='left'> 2. Where do they spend their young lives? &#10004;</p>";
+                            $correct = $correct + 1;
+                        }else{
+                            echo "<p class='left'> 2. Where do they spend their young lives? &#10060;</p>";
+                        }
+                ?>
+                <div class="brow">
+                    <input type="radio" name="q2" id="deepsea" value="deepsea" disabled>
+                    <label for="deepsea" class="correct">In the Deep Sea</label>
+                    <input type="radio" name="q2" id="beach" value="beach" disabled>
+                    <label for="beach">At the Beach</label>
+                    <input type="radio" name="q2" id="shallowwaters" value="shallowwaters" disabled>
+                    <label for="shallowwaters">In Shallow Waters</label>
+                </div>
+                <?php
+                        if($q3 == $answerKey['q3']){
+                            echo "<p class='left'> 3. What is the survival rate of hatchlings? :( &#10004;</p>";
+                            $correct = $correct + 1;
+                        }else{
+                            echo "<p class='left'> 3. What is the survival rate of hatchlings? :( &#10060;</p>";
+                        }
+                ?>
+                <div class="brow">
+                    <input type="radio" name="q3" id="hundred" value="hundred" disabled>
+                    <label for="hundred">One in hundred</label>
+                    <input type="radio" name="q3" id="thousand" value="thousand" disabled>
+                    <label for="thousand" class="correct">One in thousand</label>
+                    <input type="radio" name="q3" id="million" value="million" disabled>
+                    <label for="million">One in million</label>
+                </div>
+                <div class="brow">
+                    <?php
+                        echo '<p id="score">Your score is: ' . ($correct/3)*100;
+                    ?>
+                </div>
+                <div class="brow" id="buttons">
+                    <input id="reset-btn" type="reset" value="Cancel" disabled>
+                    <input id="cancel-btn" type="submit" value="Submit" disabled>
+                </div>
+            </form>
+        </div>
+        <div id="waveSpace">
+            
+        </div>
+    </div>
+    <footer>
+        <p> &copy; 2022 Aigerim Zhusubalieva</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="images/icons8-girl-32.png">
+</head>
+<body>
+    <header id="menu">
+        <div onclick="changeMenuBar(this)" class="menuContainer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="nav" id="nav">
+        <nav>
+            <ul >
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">A1</a></li>
+                <li><a href="asg2/index.html">A2</a></li>
+                <li><a href="asg3/index.html">A3</a></li>
+                <li><a href="asg4/index.html">A4</a></li>
+                <li><a href="asg5/index.html">A5</a></li>
+                <li><a href="asg5/products.html">Postcards</a></li>
+            </ul>
+        </nav>
+        <a href="../contact.html"> <button>Contact</button> </a>
+        </div>
+    </header>
+    <div id="formContainer">
+        <h2>Contact form for feedback/suggestions/appreciations</h2>
+        <form action="">
+            <div class="row">
+                <div class="labelCol">
+                    <label for="name">Name</label>
+                    <label for="name" class="star">*</label>
+                  </div>
+                  <div class="inputCol">
+                    <input type="text" id="name" name="name" placeholder="First and Last name" required>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="labelCol">
+                    <label for="email">Email</label>
+                    <label for="name" class="star">*</label>
+                  </div>
+                  <div class="inputCol">
+                    <input type="email" id="email" name="email" placeholder="Valid email address" required>
+                  </div>
+            </div>
+            <div class="row">
+                <div class="labelCol">
+                  <label for="comment">Comment</label>
+                  <label for="name" class="star">*</label>
+                </div>
+                <div class="inputCol">
+                  <textarea id="comment" name="comment" placeholder="Feedback, suggestions, compliments..:)" required></textarea>
+                </div>
+              </div>
+            <div class="row">
+                <input type="submit" name="submit" id="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+    <footer>
+      <p> &copy; 2022 Aigerim Zhusubalieva</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,84 @@
+body{
+    align-items: center;
+    text-align: center;
+}
+
+#crapBody{
+    background-color: white;
+    background-image: url("images/dice.jpg");
+    background-size: cover;
+}
+
+#menu{
+    background-color: transparent;
+    box-shadow: none;
+    backdrop-filter: blur(5px);
+}
+
+#menu ul{
+    background-color: transparent;
+    text-shadow: 1px 1px 2px grey;
+}
+
+#menu li a{
+    color: black;
+}
+
+#main{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer{
+    background-color: transparent;
+}
+
+h2{
+    color:black;
+    font-size: 40px;
+    font-weight: bolder;
+    margin:0 0 0 300px;
+}
+
+h5{
+    color: black;
+    font-size: 20px;
+    font-weight: bolder;
+    margin: 25px 0 0 300px;
+}
+
+#crapB{
+    margin: 25px 0 0 300px;
+    padding: 10px 10px;
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: monospace;
+    backdrop-filter: blur(20px);
+}
+
+#crapB:hover{
+    color: purple;
+}
+
+#crapR{
+    padding: 15px 20px;
+    background-color: #a9def9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 25px;
+    font-family: monospace;
+    box-shadow: 1px 1px 10px #6f91a1;
+}
+
+#crapR:hover{
+    box-shadow: 0px 0px 25px #6f91a1;
+    font-size: 17px;
+}

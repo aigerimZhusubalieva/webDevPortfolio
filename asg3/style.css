@@ -1,0 +1,28 @@
+#redirect{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    flex-direction: column;
+}
+
+#redirect button{
+    padding: 15px 20px;
+    background-color: #a9def9;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+    margin: 25px;
+    font-family: monospace;
+    box-shadow: 1px 1px 10px #6f91a1;
+}
+
+#redirect a{
+    color: black;
+}
+
+#redirect button:hover{
+    box-shadow: 0px 0px 25px #6f91a1;
+    font-size: 27px;
+}

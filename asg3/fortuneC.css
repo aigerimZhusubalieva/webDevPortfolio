@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+body{
+    background-color: white;
+}
+
+#menu{
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#menu ul{
+    background-color: transparent;
+    text-shadow: 1px 1px 2px grey;
+}
+
+#menu li a{
+    color: white;
+}
+
+#main{
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#fortune{
+    height: 300px;
+    width: 500px;
+    border: 8px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(5px);
+}
+
+#metafortune{
+    height: 280px;
+    width: 480px;
+    border: 5px solid white;
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#fortuneC{
+    width: 400px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    font-family: 'Silkscreen';
+    text-shadow: 2px 2px 3px rgba(107, 106, 106, 0.68);
+}
+
+footer{
+    background-color: transparent;
+}
+
+#fortune { 
+    animation-name: floating;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.bar1, .bar2, .bar3{
+    background-color: white;
+}
+ 
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+@media (max-width: 920px){
+    #main{
+        margin-top: 150px;
+    }
+}

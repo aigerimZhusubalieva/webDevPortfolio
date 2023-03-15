@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Della+Respira&family=Marcellus&family=Open+Sans:wght@300&display=swap');
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+#main{
+  padding: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text]{
+  width: 95%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+#reset-btn, #submit-btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 95%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+#reset-btn:hover, #submit-btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+#myForm{
+	background-color: rgba(255, 255, 255, 0.3);
+	padding: 10px;
+	font-family: monospace;
+  border-radius: 15px;
+}
+
+select{
+    border: 1px solid black;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    font-family: monospace;
+    padding: auto;
+}
+
+#shipping{
+  display: none;
+}
+
+#shipping-div label{
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  left: -140px;
+  bottom: 3px;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+#products{
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#products img{
+  border-radius: 10px;
+}
+
+#products input[type=number]{
+  width: 70px;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  padding: 4px;
+  margin: 5px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#grandtotal{
+  font-size: 20px;
+}
+
+#totalLabel, #totalwship{
+  text-align: center;
+}
+
+#receipt{
+  width: 800px;
+  margin: 30px;
+  display: none;
+}
+
+.newclass{
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  padding: 10px;
+}
+
+@media (max-width: 920px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+  #main{
+		margin-top: 100px;
+	}
+}

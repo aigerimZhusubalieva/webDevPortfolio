@@ -1,0 +1,4 @@
+ssh az2177@i6.cims.nyu.edu
+type the password
+
+pwd and work here

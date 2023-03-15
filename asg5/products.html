@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcards</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../images/icons8-girl-32.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="asg5cart.js" defer></script>
+    <script src="../script.js" defer></script>
+</head>
+<body id="backgroundImageBody">
+    <header id="menu">
+        <div onclick="changeMenuBar(this)" class="menuContainer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="nav" id="nav">
+        <nav>
+            <ul >
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../contact.html">A1</a></li>
+                <li><a href="../asg2/index.html">A2</a></li>
+                <li><a href="../asg3/index.html">A3</a></li>
+                <li><a href="../asg4/index.html">A4</a></li>
+                <li><a href="index.html">A5</a></li>
+                <li><a href="../asg6/index.html">A6</a></li>
+                <li><a href="../asg7/index.html">A7</a></li>
+                <li><a href="products.html">Postcards</a></li>
+            </ul>
+        </nav>
+        <a href="../contact.html"> <button>Contact</button> </a>
+        </div>
+    </header>
+    <div id="main">
+        <div id="products">
+            <h1>Postcards :)</h1>
+            <div class="row">
+                <div class="col-50">
+                    <h3>Albania</h3>
+                    <img src="img/p1.jpg">
+                    <p>This picture was taken from a beautiful Airbnb rooftop in Sarande, Albania</p>
+                    Price (USD):
+                    <input type=number id="price1" class="price" readonly value=10>
+                    <br>
+                    Quantity:
+                    <input type=number id="product1" class="qt" min="0" max="20" value="0">
+                    <br>
+                    Subtotal is:<input type=number readonly id="subtotal1" class="subtotal">
+                </div>
+                <div class="col-50">
+                    <h3>Sri Lanka</h3>
+                    <img src="img/p2.jpg">
+                    <p>Ahangama Beach in the southern part of Sri Lanka</p>
+                    Price (USD):
+                    <input type=number id="price2" class="price" readonly value=15>
+                    <br>
+                    Quantity:
+                    <input type=number id="product2" class="qt" min="0" max="20" value="0">
+                    <br>
+                    Subtotal is:<input type=number readonly id="subtotal2" class="subtotal">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-50">
+                    <h3>In the Air</h3>
+                    <img src="img/p3.jpg">
+                    <p>10,000km above the ground, somewhere around the Atlantic Ocean</p>
+                    Price (USD):
+                    <input type=number id="price3" class="price" readonly value=20>
+                    <br>
+                    Quantity:
+                    <input type=number id="product3" class="qt" min="0" max="20" value="0">
+                    <br>
+                    Subtotal is:<input type=number readonly id="subtotal3" class="subtotal">
+                </div>
+                <div class="col-50">
+                    <h3>Saadiyat Beach</h3>
+                    <img src="img/p4.jpg">
+                    <p>Only 10 mins away from NYU Abu Dhabi campus, a stunning man-made beach on Saadiyat Island</p>
+                    Price (USD):
+                    <input type=number id="price4" class="price" readonly value=20>
+                    <br>
+                    Quantity:
+                    <input type=number id="product4" class="qt" min="0" max="20" value="0">
+                    <br>
+                    Subtotal is:<input type=number readonly id="subtotal4" class="subtotal">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-50">
+                    <h3>Coney Island</h3>
+                    <img src="img/p5.jpg">
+                    <p>Luna Park on Coney Island is one of the biggest attractions of NYC!</p>
+                    Price (USD):
+                    <input type=number id="price5" class="price" readonly value=10>
+                    <br>
+                    Quantity:
+                    <input type=number id="product5" class="qt" min="0" max="20" value="0">
+                    <br>
+                    Subtotal is:<input type=number readonly id="subtotal5" class="subtotal">
+                </div>
+            </div>
+            <h3>Total is: </h3> <input type=number readonly id="grandtotal">
+        </div>
+        <form id="myForm">
+            <div class="row">
+                <div class="col-50">
+                    <h3>Shipping Address</h3>
+                    <label for="name"><i class="fa fa-user"></i> Full Name</label>
+                    <input type="text" class="tinput" id="fname" name="firstname" placeholder="Aigerim Zhusubalieva">
+                    <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                    <input type="text" class="tinput" id="email" name="email" placeholder="az2177@nyu.edu">
+                    <label for="shipping-label"><i class="fa fa-truck"></i> Shipping Method</label>
+                    <div id="shipping-div">
+                        <input type="radio" name="ship" id="pickup" value="pickup">
+                        <label for="ship">Pick Up</label> <br>
+                        <input type="radio" name="ship" id="ship" value="ship">
+                        <label for="ship">Ship</label>
+                    </div>
+                    <div id="shipping">
+                        <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+                        <input type="text" class="tinput" id="adr" name="address" placeholder="715 Broadway 4B">
+                        <label for="city"><i class="fa fa-institution"></i> City</label>
+                        <input type="text" class="tinput" id="city" name="city" placeholder="New York">
+                        <div class="row">
+                            <div class="col-50" id="selct-div">
+                                <label for="state">State</label>
+                                <div id="select">
+                                <select name="state" id="state-select">
+                                    <option value="selectState" selected>Select State</option>
+                                    <option value="AL">Alabama</option>
+                                    <option value="AK">Alaska</option>
+                                    <option value="AZ">Arizona</option>
+                                    <option value="AR">Arkansas</option>
+                                    <option value="CA">California</option>
+                                    <option value="CO">Colorado</option>
+                                    <option value="CT">Connecticut</option>
+                                    <option value="DE">Delaware</option>
+                                    <option value="DC">District Of Columbia</option>
+                                    <option value="FL">Florida</option>
+                                    <option value="GA">Georgia</option>
+                                    <option value="HI">Hawaii</option>
+                                    <option value="ID">Idaho</option>
+                                    <option value="IL">Illinois</option>
+                                    <option value="IN">Indiana</option>
+                                    <option value="IA">Iowa</option>
+                                    <option value="KS">Kansas</option>
+                                    <option value="KY">Kentucky</option>
+                                    <option value="LA">Louisiana</option>
+                                    <option value="ME">Maine</option>
+                                    <option value="MD">Maryland</option>
+                                    <option value="MA">Massachusetts</option>
+                                    <option value="MI">Michigan</option>
+                                    <option value="MN">Minnesota</option>
+                                    <option value="MS">Mississippi</option>
+                                    <option value="MO">Missouri</option>
+                                    <option value="MT">Montana</option>
+                                    <option value="NE">Nebraska</option>
+                                    <option value="NV">Nevada</option>
+                                    <option value="NH">New Hampshire</option>
+                                    <option value="NJ">New Jersey</option>
+                                    <option value="NM">New Mexico</option>
+                                    <option value="NY">New York</option>
+                                    <option value="NC">North Carolina</option>
+                                    <option value="ND">North Dakota</option>
+                                    <option value="OH">Ohio</option>
+                                    <option value="OK">Oklahoma</option>
+                                    <option value="OR">Oregon</option>
+                                    <option value="PA">Pennsylvania</option>
+                                    <option value="RI">Rhode Island</option>
+                                    <option value="SC">South Carolina</option>
+                                    <option value="SD">South Dakota</option>
+                                    <option value="TN">Tennessee</option>
+                                    <option value="TX">Texas</option>
+                                    <option value="UT">Utah</option>
+                                    <option value="VT">Vermont</option>
+                                    <option value="VA">Virginia</option>
+                                    <option value="WA">Washington</option>
+                                    <option value="WV">West Virginia</option>
+                                    <option value="WI">Wisconsin</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-50">
+                            <label for="zip">Zip</label>
+                            <input type="text" class="tinput" id="zip" name="zip" placeholder="10001">
+                        </div>
+                    </div>
+                    </div>
+                    
+                </div>
+
+                <div class="col-50">
+                    <h3>Payment</h3>
+                    <label for="fname">Accepted Cards</label>
+                    <div class="icon-container">
+                      <i class="fa fa-cc-visa" style="color:navy;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                      <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-discover" style="color:orange;"></i>
+                    </div>
+                    <label for="cname">Name on Card</label>
+                    <input type="text" class="tinput" id="cname" name="cardname" placeholder="Aigerim Zhusubalieva">
+                    <label for="ccnum">Credit card number</label>
+                    <input type="text" class="tinput" id="ccnum" name="cardnumber" placeholder="7777 7777 7777 7777">
+                    <label for="expmonth">Exp Month</label>
+                    <input type="text" class="tinput" id="expmonth" name="expmonth" placeholder="10">
+                    <div class="row">
+                      <div class="col-50">
+                        <label for="expyear">Exp Year</label>
+                        <input type="text" class="tinput" id="expyear" name="expyear" placeholder="2022">
+                      </div>
+                      <div class="col-50">
+                        <label for="cvv">CVV</label>
+                        <input type="text" class="tinput" id="cvv" name="cvv" placeholder="123">
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <h3 id="totalLabel">To pay: </h3><h3 id="totalwship"></h3>
+            <div class="row">
+                <div class="col-50">
+                    <input type="reset" value="Reset" id="reset-btn">
+                </div>
+                <div class="col-50">
+                    <input type="submit" value="Check Out" id="submit-btn">
+                </div>
+            </div>
+            
+        </form>
+        <div id="receipt">
+            <h1 id="rname"> Receipt for </h1>
+            <p id=rdate>On </p>
+            <p>Purchased items:</p>
+            <ol id="ritems">
+                
+            </ol>
+            <p id="rsubtotal">Sub Total: </p>
+            <p id="rshipping">Shipping: </p>
+            <p id="rtotal">Total: </p>
+            <p id="rcard">Card Used: XXXX-XXXX-XXXX-</p>
+        </div>
+    </div>
+    <footer>
+        <p> &copy; 2022 Aigerim Zhusubalieva</p>
+    </footer>
+</body>
+</html>

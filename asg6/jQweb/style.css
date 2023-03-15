@@ -1,0 +1,23 @@
+#main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#backgroundImageBody{
+	background-image: url;
+}
+
+.app{
+	display: none;
+}
+
+#t3{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+}
+
+#t3 img{
+	margin: 20px;
+}
